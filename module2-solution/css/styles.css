@@ -1,23 +1,47 @@
 /** Estilos base **/
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
 }
 
 h1 {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
 }
 
-p {
-    border: 4px solid black;
-    background-color: #A52A2A;
-    width: 90%;
-    height: 150px;
-    margin-right: auto;
-    margin-left: auto;
+
+
+h2#S1{
+    border: 2px solid black;
+    background-color: plum;
+}
+
+
+h2#S2{
+    border: 2px solid black;
+    background-color: red;
+}
+
+h2#S3{
+    border: 2px solid black;
+    background-color: green;
+}
+
+h2 {
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    width: 75px;
+    font-weight: bold;
+    text-align: center;
 }
-
+p {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
 .row {
     width: 100%;
 }
@@ -26,48 +50,73 @@ p {
 /** PC **/
 
 @media(min-width: 992px){
-p {
-    color: blue;
-}
-.col-lg-3, .col-lg-3, .col-lg-3{
-    float: left;
-    border: 1px solid green;
-}
-.col-lg-3 {
-    width: 33.33%;
-}
-.col-lg-3 {
-    width: 33.33%;
-}
-.col-lg-3 {
-    width: 33.33%;
-}
+   
+    .col-lg-3, .col-lg-3, .col-lg-3 p{
+        position: relative;
+        float: left;
+        background-color: gray;
+        color: white;
+        padding: 0px;
+        border-left: 100px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        
+    }
+    .col-lg-3 {
+        width: 30.33%;
+        border: 2px solid black;
+    }
+    .col-lg-3 {
+        width: 30.33%;
+    }
+    .col-lg-3 {
+        width: 30.33%;
+    }
 }
 
 /** Tablets **/
 @media (min-width:768px) and (max-width: 991px) {
-    p {
-        color: aqua;  
-    }
     .col-md-1, .col-md-2, .col-md-3{
         float: left;
-        border: 1px solid green;
+        background-color: gray;
+        border: 2px solid black;
+        color: white;
+        height: 120%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
     }
     .col-md-1 {
-        width: 50%;
+        width: 48%;
+        margin: 5px;
     }
     .col-md-2 {
-        width: 50%;
+        width: 48%;
+        margin: 5px;
+    }
+    .col-md-3 {
+        background-color: red;
+        margin: 5px;
     }
 }
 
 /** Moviles **/
 @media(max-width: 767px){
-    p {
-        color: darkorange;
+    div#d3{
+        border: 2px solid black;
+        background-color: gray;
+        height: 150px;
+        margin-bottom: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        color: white
     }
     .col-md-1, .col-md-2, .col-md-3{
         float: left;
-        border: 1px solid green;
+        border: 2px solid black;
+        background-color: gray;
+        color: white;
+        margin-bottom: 10px;
     }
 } 
+
+
